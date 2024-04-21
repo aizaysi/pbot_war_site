@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../css/launcherstyle.css" />
+<link rel="stylesheet" href="../css/nanoscroller.css" />
+<link rel="stylesheet" href="../css/googlefont.css" />
+<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/jquery.nanoscroller.min.js"></script>
+<script type="text/javascript">
+	document.onselectstart = document.oncontextmenu = function() {
+		return false;
+	};
+	$(function() {
+		var divNoticias = $('div#menu-texto div.nano-content');
+		divNoticias.parent().nanoScroller();
+		$.getJSON('../scripts/noticias.php', {}, function(list) {
+			for (var i = -1; ++i < list.length;) {
+				var noticia = list[i];
+
+				if (i > 0) {
+					$(document.createElement('br')).appendTo(divNoticias);
+				}
+				$(document.createElement('div')).addClass('msgTitulo').text(noticia.post_subject).appendTo(divNoticias);
+				$(document.createElement('span')).addClass('date').text(noticia.post_time).appendTo(divNoticias);
+				$(document.createElement('div')).addClass('msgCorpo').html(noticia.post_text).appendTo(divNoticias);
+				$(document.createElement('div')).addClass('msgAssinatura').appendTo(divNoticias);
+			}
+			divNoticias.parent().nanoScroller();
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="menu-texto" class="nano">
+		<div class="nano-content"></div>
+	</div>
+</body>
+</html>

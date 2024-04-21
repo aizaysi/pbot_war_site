@@ -1,0 +1,37 @@
+﻿@media only screen and (max-width:900px) {
+	.hide-mobile
+	{
+		display:none !important;
+	}
+	.menu-body
+	{
+		width: 300px;
+		margin-top: 3%;
+		margin-bottom: 15%;
+	}
+		.menu-body ul:after
+		{
+			content:"";
+			border-bottom: 1px solid #008B8B;
+			position:absolute;
+			top:30px;
+			left:0;
+			width:100%;
+			height: 1px;
+
+		}
+		.menu-body ul li
+		{
+			line-height: 2em;
+			margin-left: 3%;
+		}
+	.img-download
+	{
+		margin-left: 0%;
+	}
+	.span-download
+	{
+		left: 31%;
+		bottom: -65px;
+	}
+}

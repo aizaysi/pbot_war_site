@@ -1,0 +1,38 @@
+<script type="text/javascript" src="js/module/rank.js"></script>
+<div class="item">
+	<div class="item-header">
+		<span translate="yes">Classificação</span> <select class="combobox" id="ranking">
+			<option value="level" translate="yes">Level</option>
+			<option value="maglevel" translate="yes">Nível Mágico</option>
+			<option value="skill_fist" translate="yes">Soco</option>
+			<option value="skill_sword" translate="yes">Espada</option>
+			<option value="skill_club" translate="yes">Clava</option>
+			<option value="skill_axe" translate="yes">Machado</option>
+			<option value="skill_dist" translate="yes">Distancia</option>
+			<option value="skill_shielding" translate="yes">Escudo</option>
+			<option value="frags">Frags</option>
+		</select>
+		<span translate="yes">Vocação</span> <select class="combobox" id="vocation">
+			<option value="0" translate="yes">Todas</option>
+			<option value="1">Sorcerer</option>
+			<option value="2">Druid</option>
+			<option value="3">Paladin</option>
+			<option value="4">Knight</option>
+		</select>
+	</div>
+</div>
+<div class="datagrid-rank">
+	<table>
+		<thead>
+			<tr>
+				<th style="width: 5%" translate="yes">Posição</th>
+				<th style="width: 80%" translate="yes">Nome</th>
+				<th id="type" style="width: 15%"></th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+</div>
+<div class="datagrid-rank-pag">
+	<span class="first"><<</span> <span class="prev"><</span> <span class="next">></span> <span class="last">>></span>
+</div>

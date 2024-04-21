@@ -1,0 +1,181 @@
+/* Acordeon styles */
+.tab {
+	position: relative;
+	margin-bottom: 1px;
+	width: 100%;
+	color: #fff;
+	overflow: hidden;
+	border-bottom: 1px solid #ff8000;
+}
+
+input {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+
+label {
+	position: relative;
+	display: block;
+	line-height: 3;
+	cursor: pointer;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 30px;
+	color: #ffbf00;
+}
+
+.tab-content {
+	max-height: 0;
+	overflow: hidden;
+	-webkit-transition: max-height .35s;
+	-o-transition: max-height .35s;
+	transition: max-height .35s;
+	position: relative;
+}
+
+.tab-content p {
+	margin: 1em;
+	color: #24cfcf;
+}
+/* :checked */
+input:checked ~ .tab-content {
+	max-height: 40em;
+}
+/* Icon */
+label::after {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 3em;
+	height: 3em;
+	line-height: 3;
+	text-align: center;
+	-webkit-transition: all .35s;
+	-o-transition: all .35s;
+	transition: all .35s;
+	opacity: 0.5;
+	font-size: 0.5em;
+}
+
+input[type=checkbox]+label::after {
+	content: "+";
+}
+
+input[type=radio]+label::after {
+	content: "\25BC";
+}
+
+input[type=checkbox]:checked+label::after {
+	transform: rotate(315deg);
+}
+
+input[type=radio]:checked+label::after {
+	transform: rotateX(180deg);
+}
+
+.lbl-msg {
+	font-size: 0.7em;
+	color: #24cfcf;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.lbl {
+	color: #24cfcf;
+	font-size: 0.8em;
+	margin-bottom: 5px;
+}
+
+.lbl span {
+	color: #fff;
+}
+
+.txt {
+	z-index: 0;
+	position: relative;
+	background: #0c5166;
+	border: 1px solid #24cfcf;
+	border-radius: 5px;
+	opacity: 1;
+	padding: 5px;
+	width: 50%;
+	color: #24cfcf;
+	margin-bottom: 10px;
+}
+
+.robo {
+	border: 1px solid #24cfcf;
+	height: auto;
+	width: 305px;
+	padding: 10px; position : relative;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	position: relative;
+}
+
+.robo-check {
+	opacity: 1;
+	z-index: 0;
+	bottom: -24px;
+}
+
+.robo-check-lbl {
+	font-size: 0.8em;
+	position: absolute;
+	left: 8%;
+	bottom: -25px;
+}
+
+.btn-entrar {
+	position: relative;
+	opacity: 1;
+	z-index: 0;
+	padding: 5px;
+	width: 100px;
+	border-radius: 5px;
+	border: 1px solid aqua;
+	height: 30px;
+	background: #063847;
+	color: aqua;
+	transition-duration: 0.2s;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-right: 2%;
+}
+
+.btn-entrar:hover {
+	transition-duration: 0.2s;
+	background: #086c8a;
+	cursor: pointer;
+}
+
+.btn-entrar:active {
+	background: black;
+}
+
+.btn-limpar {
+	position: relative;
+	opacity: 1;
+	z-index: 0;
+	padding: 5px;
+	width: 100px;
+	border-radius: 5px;
+	border: 1px solid #ff9f38;
+	height: 30px;
+	background: #8a4b08;
+	color: #ff9f38;
+	transition-duration: 0.2s;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.btn-limpar:hover {
+	transition-duration: 0.2s;
+	background: #de7921;
+	cursor: pointer;
+}
+
+.btn-limpar:active {
+	background: #de4721;
+}

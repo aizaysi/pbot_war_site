@@ -1,0 +1,472 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0}
+
+html, body{
+	
+	
+	font-family: 'Comfortaa', cursive;
+}
+
+/*###########################BODY##############
+background-color:#0a1a29;
+	background-image: url(img/back.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+*/
+
+#slideshow {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:-9999;
+}
+img.bgM{width:100%; height:100%;}
+
+.bg
+{
+	background: rgba(0,0,0,0.8);
+	min-height: 100%;
+	height: auto;
+	width: 100%;
+	position: absolute;
+}
+
+/*.wiki 
+{
+	position: fixed;
+    top: 30px;
+    right: -90px;
+    width: 250px;
+    height: auto;
+    color: #F7D871;
+    text-shadow: 0px 0px 13px yellow;
+    padding: 5px;
+    transform: rotate(45deg);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 10px solid transparent;
+    -webkit-border-image: url(../img/border3.png) 10 round;
+    -o-border-image: url(../img/border3.png) 10 round;
+    border-image: url(../img/border3.png) 10 round;
+    background: #ff3019;
+    background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+    background: -webkit-linear-gradient(top, #ff3019 0%,#cf0404 100%);
+    background: linear-gradient(to bottom, #ff3019 0%,#cf0404 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 );
+}*/
+
+.logo
+{	
+	width:450px;
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+}
+.logo-img
+{
+	margin: 0 auto;
+	margin-top: 1%;
+	margin-bottom: 0%;
+}
+
+.content
+{
+	width: 100%;
+	height: auto;
+	z-index: 1;
+	position: relative;
+}
+
+.content-main
+{
+	background: rgba(12, 23, 27, 0.9);
+	margin: 0 auto;
+	width:60%;
+	color: #fff;
+	border: 30px solid transparent;
+    -webkit-border-image: url(../img/border.png) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(../img/border.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(../img/border.png) 30 round;
+	position: relative;
+}
+	.content-main::before
+	{
+		content:"";
+		background: url(../img/before.png);
+		width: 156px;
+		height: 167px;
+		position: absolute;
+		top: -57px;
+		left: -37px;
+	}
+	.content-main::after
+	{
+		content:"";
+		background: url(../img/after.png);
+		width: 156px;
+		height: 167px;
+		position: absolute;
+		top: -57px;
+		right: -37px;
+	}
+
+.item
+{
+	border-bottom: 1px solid #18858d;
+	margin-bottom: 2%;
+}
+
+.item-header
+{
+	font-family: 'Fredericka the Great', cursive;
+	font-size:30px;
+	color:#ffbf00;
+}
+
+.item-sub-header
+{
+	margin-left:1px;
+	line-height:1em;
+	font-size:12px;
+	color:#ffbf00;
+	text-shadow:1px 1px 0px #000;
+}
+
+.item-content
+{
+	margin: 1%;
+	font-size: 0.9em;
+	color:#24cfcf;
+}
+
+.item-sign
+{
+	color: #008B8B;
+	font-size: 0.7em;
+	font-weight: bolder;
+}
+
+.img-download
+{
+	float:left;
+	position:relative;
+	z-index:2;
+	margin-left:28%;
+	margin-top: 1%;
+}
+
+.span-download
+{
+	color: #4a89ce;
+	text-decoration:none;
+	position: absolute;
+    left: 42.2%;
+    bottom: -70px;
+    z-index: 3;
+    font-size: 1.3em;
+    font-weight: bold;
+	transition-duration: 0.5s;
+}
+	.span-download:hover
+	{
+		color:#fff;
+		transition-duration: 0.5s;
+	}
+
+.wiki {
+    -webkit-animation: mymove 3s infinite;
+    animation: mymove 3s infinite;
+}
+
+@-webkit-keyframes mymove {
+    0%  { color:#00c0ff; }
+    25% { color:#00ffe4; }
+    50% { color:#00ff9c; }
+    75% { color:#00ffe4; }
+    100%{ color:#00c0ff; }
+}
+@keyframes mymove {
+ 	0%  { color:#00c0ff; border-bottom: 1px solid #00c0ff;}
+    25% { color:#00ffe4; border-bottom: 1px solid #00ffe4;}
+    50% { color:#00ff9c; border-bottom: 1px solid #00ff9c;}
+    75% { color:#00ffe4; border-bottom: 1px solid #00ffe4;}
+    100%{ color:#00c0ff; border-bottom: 1px solid #00c0ff;}
+}
+
+.online {
+	width: 100%;
+	text-align: center;
+	transform: translateY(11px);
+}
+.online span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #32d2fe;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    transform: translateY(-3px);
+}
+.online span strong {
+	letter-spacing: 0px;
+	font-weight: 100;
+}
+
+.menu-body
+{
+	background: rgba(12, 23, 27, 0.9);
+	margin: 0 auto;
+	margin-top: 0%;
+	margin-bottom: 7%;
+	max-width: 650px;
+	color: #fff;
+	border: 30px solid transparent;
+    -webkit-border-image: url(../img/border2.png) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(../img/border2.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(../img/border2.png) 30 round;
+	position: relative;
+}
+
+	.menu-body ul
+	{
+		list-style:none;
+		text-align: center;
+	}
+
+		.menu-body ul li
+		{
+			display: inline-block;
+			margin-left: 2%;
+			line-height: 2em;
+			font-weight: bolder;
+			transition-duration:1s;
+		}
+		.menu-body ul li a 
+		{
+			color: #008B8B;
+			text-decoration: none;
+			transition-duration:1s;
+		}
+			.menu-body ul li a:hover
+			{
+				color:#24cfcf;
+				text-shadow:0px 0px 15px #24cfcf;
+				transition-duration:0.2s;
+			}
+			.menu-body ul li:first-child
+			{
+				margin-left:0;
+			}
+
+	.menu-body::before
+	{
+		content:"";
+		background: url(../img/before2.png);
+		width: 112px;
+		height: 19px;
+		position: absolute;
+		top: -34px;
+		left: -57px;
+	}
+	.menu-body::after
+	{
+		content:"";
+		background: url(../img/after2.png);
+		width: 112px;
+		height: 19px;
+		position: absolute;
+		top: -34px;
+		right: -57px;
+	}
+
+.menu
+{
+	display: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background: rgba(22, 33, 37, 1);
+	z-index: 10;
+	border-bottom: 30px solid transparent;
+    -webkit-border-image: url(../img/border.png) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(../img/border.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(../img/border.png) 30 round;
+	box-shadow: 0px 5px 5px #000;
+}
+
+	.menu ul
+	{
+		list-style: none;
+		text-align: center;
+		margin-top: -5px;
+	}
+		.menu ul li
+		{
+			display: inline-block;
+			color: #008B8B;
+			margin-left: 2%;
+			line-height: 0em;
+			font-weight: bolder;
+			transition-duration:1s;
+		}
+		.menu ul li a 
+		{
+			color: #008B8B;
+			text-decoration: none;
+		}
+		.menu ul li a:hover
+			{
+				color:#24cfcf;
+				text-shadow:0px 0px 15px #24cfcf;
+				transition-duration:0.5s;
+			}
+			.menu ul li:first-child
+			{
+				transform: translateY(15px);
+			}
+
+.social
+{
+	margin: 0 auto;
+	width: 210px;
+	margin-bottom: 3%;
+	margin-top:-29px;
+	z-index:1;
+	position:relative;
+}
+
+.social-f
+{
+	position:absolute;
+	top:4px;
+	left:52px;
+	transition-duration:0.5s;
+}
+
+.social-y
+{
+	position:absolute;
+	top:15px;
+	left:85px;
+	transition-duration:0.5s;
+}
+
+.social-t
+{
+	position:absolute;
+	top:4px;
+	left:119px;
+	transition-duration:0.5s;
+}
+
+	.social-f:hover, .social-t:hover, .social-y:hover
+	{
+		transform: rotate(360deg);
+		transition-duration:0.2s;
+	}
+
+.combobox {
+	width: 10%;
+	height: 25px;
+	border: 1px solid #24cfcf;
+	background: transparent;
+	color:#24cfcf;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.pesquisar {
+	margin: 0 auto;
+	color: #ffbf00;
+	width:250px;
+	margin-bottom: 2%;
+	margin-top: 8%;
+	font-size: 0.8em;
+	position: relative;
+	font-weight: bold;
+}
+.pesquisar:before {
+	content:"\26b2";
+	position: absolute;
+	right:-20px;
+	top:-7px;
+	color: #ffbf00;
+	font-size: 2em;
+	transform: rotate(45deg);
+}
+.pesquisar-btn {
+	position: relative;
+	top: 3px;
+}
+.txt-pesquisar {
+	border: 1px solid #ffbf00;
+	border-radius: 30px;
+	height: 20px;
+	width: 130px;
+	padding-left: 10px;
+	margin-left: 10px;
+	color: #24cfcf;
+	background: rgba(12, 23, 27, 0.9);
+	opacity: 1 !important;
+	z-index: 1 !important;
+}
+.btn-pesquisar-personagem {
+	opacity: 0;
+	z-index: 1;
+	width: 30px;
+	position: absolute;
+	right: -30px;
+	cursor: pointer;
+}
+
+.flags {
+	position: absolute;
+	width: 40px;
+	border-radius: 5px;
+	top: 8px;
+	margin-left: 5px;
+}
+
+.flag2 {
+	transform: translateX(50px);
+}
+
+div#ajaxLoader {
+	display: none;
+	z-index: 1000;
+}
+
+div#ajaxLoader>#modal {
+	background-color: black;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	opacity: 0.5;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+	z-index: 1000;
+}
+
+div#ajaxLoader>div#centerImg {
+	width: 200px;
+	height: 136px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background-image: url('../img/ajaxloading.png');
+	margin-left: -100px;
+	margin-top: -80px;
+	z-index: 1000;
+}

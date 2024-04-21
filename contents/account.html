@@ -1,0 +1,47 @@
+<script type="text/javascript" src="js/module/account.js"></script>
+<div class="tab blue">
+	<input id="tab-four" type="radio" name="tabs2"> <label for="tab-four" translate="yes">Registrar</label>
+	<div class="tab-content">
+		<div class="lbl-msg" translate="yes">Seja bem vindo ao menu de criação de conta do jogo, por favor preencha todos os campos corretamente.</div>
+		<div class="lbl" translate="yes">Digite um nome para o Login:</div>
+		<input class="txt" type="text" name="login" required="required">
+		<div class="lbl" translate="yes">Digite um e-m@il válido:</div>
+		<input class="txt" type="text" name="email" required="required">
+		<div class="lbl" translate="yes">Digite sua senha:</div>
+		<input class="txt" type="password" name="password" required="required">
+		<div class="lbl" translate="yes">Confirme sua senha:</div>
+		<input class="txt" type="password" name="confirmPassword" required="required">
+		<div class="robo">
+			<div id="securityKey"></div>
+			<input class="robo-check" type="checkbox" name="aceitoTermos" value="1" required="required" title="Termos e Regras do PBOT"> <span class="robo-check-lbl"><a href="#" id="linkTermos" style="color: white;" translate="yes">Eu aceito os Termos e Regras do PBOT</a></span>
+		</div>
+		<input class="btn-entrar" type="button" name="" value="Enviar" action="cadastrarConta" translate="yes"> <input class="btn-limpar" type="button" name="" value="Limpar" translate="yes">
+	</div>
+</div>
+<div class="tab blue">
+	<input id="tab-five" type="radio" name="tabs2"> <label for="tab-five" translate="yes">Entrar</label>
+	<div class="tab-content">
+		<div class="lbl-msg" translate="yes">Seja bem vindo ao menu de login, por favor preencha todos os campos para acessar seu painel de controle.</div>
+		<div class="lbl" translate="yes">Digite seu login:</div>
+		<input class="txt" type="text" name="name" required="required">
+		<div class="lbl" translate="yes">Digite sua senha:</div>
+		<input class="txt" type="password" name="password" required="required">
+		<div class="lbl"><a href="#" id="recoveryButton" style="color: white;" translate="yes">Clique aqui caso tenha perdido sua senha.</a></div>
+		<div class="robo">
+			<div id="securityKey"></div>
+		</div>
+		<input class="btn-entrar" type="button" name="" value="Enviar" action="login" translate="yes"> <input class="btn-limpar" type="button" name="" value="Limpar" translate="yes">
+	</div>
+</div>
+<div class="tab blue">
+	<input id="tab-six" type="radio" name="tabs2"> <label for="tab-six" translate="yes">Recuperar</label>
+	<div class="tab-content">
+		<div class="lbl-msg" translate="yes">Seja bem vindo ao menu de recuperação de conta, por favor preencha todos os campos corretamente.</div>
+		<div class="lbl" >e-mail:</div>
+		<input class="txt" type="text" name="email" required="required">
+		<div class="robo">
+			<div id="securityKey"></div>
+		</div>
+		<input class="btn-entrar" type="button" name="" value="Enviar" action="recuperarConta" translate="yes"> <input class="btn-limpar" type="button" name="" value="Limpar" translate="yes">
+	</div>
+</div>

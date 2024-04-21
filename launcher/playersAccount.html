@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../css/launcherstyle.css" />
+<link rel="stylesheet" href="../css/nanoscroller.css" />
+<link rel="stylesheet" href="../css/googlefont.css" />
+<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../js/jquery.nanoscroller.min.js"></script>
+<script type="text/javascript">
+	document.onselectstart = document.oncontextmenu = function() {
+		return false;
+	};
+	$(function() {
+		var menuTexto = $('div#menu-texto').nanoScroller();
+		$.getJSON('../scripts/playersAccount.php', {}, function(list) {
+			var tbody = $('table > tbody');
+			for (var i = -1; ++i < list.length;) {
+				var o = list[i];
+
+				var tr = $(document.createElement('tr'));
+				tr.append($(document.createElement('td')).append(o.name));
+				tr.append($(document.createElement('td')).append(o.level).css('text-align', 'center'));
+
+				tbody.append(tr);
+			}
+
+			if (list.length > 3) {
+				menuTexto.nanoScroller();
+			}
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="menu-texto" class="nano">
+		<div class="nano-content">
+			<table style="width: 100%;">
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Level</th>
+					</tr>
+				</thead>
+				<tbody style="color: white;"></tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.datagrid-rank table { border-collapse: collapse; text-align: center; width: 100%; } 
+.datagrid-rank {font: normal 12px/150% Arial, background: transparent; overflow: hidden; }
+.datagrid-rank table td, .datagrid-rank table th { padding: 7px 10px; }
+.datagrid-rank table thead th {}
+.datagrid-rank table thead th:first-child { border: none; }.datagrid-rank table tbody td { color: #00D9E8; font-size: 12px;font-weight: normal; }
+.datagrid-rank table tbody td:first-child { border-left: none; }.datagrid-rank table tbody tr:last-child td { border-bottom: none; }
+
+.datagrid-rank-pag {
+	text-align: center;
+	margin-top:2%;
+	margin-bottom: 2%;
+	cursor:pointer;
+}
+
+.datagrid-rank-pag span{
+	margin-left: 1%;
+	transition-duration: 0.5s;
+}
+
+.datagrid-rank-pag span:hover{
+	color:#00D9E8;
+	transition-duration: 0.5s;
+}
+
+.datagrid-rank-pag span:first-child{
+	margin-left: 0%;
+}
+
+.datagrid-rank-pag span:active{
+	color: orange;
+	transition-duration: 0.1s;
+}

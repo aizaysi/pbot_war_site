@@ -1,0 +1,39 @@
+<script type="text/javascript" src="js/module/accountHome.js"></script>
+<div style="color: red; margin-top: 7px;" translate="yes">A crianção de personagem é feita através do cliente.</div>
+<div class="tab blue">
+	<input id="tab-four" type="radio" name="tabs2"> <label for="tab-four" translate="yes">Resumo</label>
+	<div class="tab-content">
+		<div class="lbl"><span translate="yes">Seja bem vindo</span>: <span id="dataName"></span></div>
+		<br>
+		<div class="lbl">
+			<span translate="yes">Créditos</span>: <span id="dataCreditos"></span>
+		</div>
+		<br>
+		<div class="lbl">
+			<span translate="yes">Último login</span>: <span id="dataUltLogin">24/4/1983</span>
+		</div>
+		<br> <input class="btn-entrar" type="button" name="" value="Sair" id="logout" translate="yes">
+	</div>
+</div>
+<div class="tab blue">
+	<input id="tab-five" type="radio" name="tabs2"> <label for="tab-five" translate="yes">Trocar Senha</label>
+	<div class="tab-content">
+		<div class="lbl-msg" translate="yes">Seja bem vindo ao menu de trocar senha, por favor preencha todos os campos.</div>
+		<div class="lbl" translate="yes">Digite sua senha atual:</div>
+		<input class="txt" type="password" name="oldPassword" required="required">
+		<div class="lbl" translate="yes">Digite sua nova senha:</div>
+		<input class="txt" type="password" name="password" required="required">
+		<div class="lbl" translate="yes">Repita sua nova senha:</div>
+		<input class="txt" type="password" name="confSenha" required="required">
+		<div class="robo">
+			<div class="g-recaptcha lblAccRegAutentic" data-sitekey="6LdY3icTAAAAAETaYh0OShriQsJFVf0D1yhmGf4T"></div>
+		</div>
+		<input class="btn-entrar" type="button" name="" value="Enviar" action="changePassword" translate="yes"> <input class="btn-limpar" type="button" name="" value="Limpar" translate="yes">
+	</div>
+</div>
+<div class="tab blue">
+	<input id="tab-six" type="radio" name="tabs2"> <label for="tab-six" translate="yes">Doações</label>
+	<div class="tab-content">
+		<div class="lbl-msg" translate="yes">Seja bem vindo ao menu de doações.</div>
+	</div>
+</div>
